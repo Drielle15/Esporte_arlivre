@@ -1,0 +1,62 @@
+:root {
+    --cor01: #800020;
+    --cor02: #5a0016;
+    --cor03: #a52a2a;
+    --cor04: #f8e6e9;
+    --cor05: #ffffff;
+    --cor06: #2b0a0a;
+}
+
+
+#cabecalho, #ul-menu, #logo{
+    display: flex;
+    align-items: center;
+}
+
+#ul-menu, #logo{
+    height: 100%;
+    color: var(--cor04);
+}
+
+#cabecalho{
+    width: 1000px;
+    height: 150px;
+    margin: 20px auto;
+    padding: 25px;
+    background-color: var(--cor01);
+    justify-content: space-between;
+}
+
+#logo, #menu{
+    width: 30px;
+    font-size: 25px;
+
+}
+
+#titulo-logo{
+    color: var(--cor04);
+    border: 1px solid var(--cor04);
+    margin: 0px 10px;
+    padding: 0px 10px;
+}
+
+
+#menu{
+    width: 70%;
+}
+
+#ul-menu{
+    list-style: none;
+}
+
+ .lnk-menu{
+    color: var(--cor04);
+    text-decoration: none;
+    margin: 0px 10px;
+    transition: 0.5s ease;
+   font-size: 20px;
+ }
+
+ .lnk-menu:hover{
+    opacity: 0.5;
+ }

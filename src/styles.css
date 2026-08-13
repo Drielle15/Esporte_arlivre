@@ -1,1 +1,18 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+    --cor01: #800020;
+    --cor02: #5a0016;
+    --cor03: #a52a2a;
+    --cor04: #f8e6e9;
+    --cor05: #ffffff;
+    --cor06: #2b0a0a;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: roboto;
+
+}
+
+
