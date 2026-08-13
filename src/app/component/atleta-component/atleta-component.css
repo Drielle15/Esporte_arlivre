@@ -4,6 +4,7 @@
     margin: 20px auto;
     padding: 25px;
     color: var(--cor02);
+    border: 3px solid var(--cor01);
 }
 
 
@@ -31,11 +32,11 @@ input{
 }
 
 .input01{
-    width: 700px;
+    width: 300px;
     
 }
 .input02{
-    width: 400px;
+    width: 300px;
 }
 
 input[type="radio"]{
