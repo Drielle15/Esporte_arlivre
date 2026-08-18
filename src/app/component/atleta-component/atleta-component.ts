@@ -21,12 +21,13 @@ export class AtletaComponent {
   uf =''
 
   //DECLARAÇÃO DO CONSTRUTOR
-  constructor (private atletaService: AtletaService){
+  constructor (private atletaService: AtletaService){}
 
-  }
  //DECLARAÇÃO DE FUNÇÕES
  exibirDados(){
-  console.log(this.nome, this.cpf, this.sexo, this.cep, this.ruaLogradouro, this.bairro, this.cidade, this.uf)
+  console.log(this.nome, this.cpf, this.sexo, this.cep,
+  this.ruaLogradouro, this.bairro, this.cidade, this.uf)
+
  this.limparDados()
 }
 
@@ -42,7 +43,7 @@ export class AtletaComponent {
 
 }
 
-salvar(){
+enviarDadosAtleta(){
   const atleta = new Atleta()
   atleta.nome = this.nome
   atleta.cpf = this.cpf
@@ -54,6 +55,15 @@ salvar(){
   atleta.uf = this.uf
 
   this.atletaService.salvarAtleta(atleta)
+  .subscribe({
+    next: (resposta) => {
+      console.log(resposta)
+    },
+
+    error: (msgErro) => {
+      console.log(msgErro)
+    }
+  })
 
   this.limparDados()
 
