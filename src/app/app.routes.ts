@@ -17,7 +17,7 @@ export const routes: Routes = [
   },
 
   {
-    path: "cadastroAtleta",
+    path: "cadastroAtleta/:id",
     component: AtletaComponent
   },
 
