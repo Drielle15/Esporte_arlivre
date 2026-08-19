@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectorRef } from '@angular/core';
 import { Atleta } from '../../../models/Atleta';
 import { AtletaService } from '../../../service/atleta-service';
 import { Router } from '@angular/router';
@@ -17,7 +17,7 @@ export class AtletaListComponent {
   listaAtletas = signal<Atleta[]>([]);
 
 
-  constructor(private listaService: AtletaService, private router: Router) {}
+  constructor(private listaService: AtletaService, private router: Router, private cdr : ChangeDetectorRef) {}
 
 
   ngOnInit(){
@@ -33,6 +33,8 @@ export class AtletaListComponent {
           this.listaAtletas.set([...dadosAtletas].sort((a, b) =>
             a.nome.localeCompare(b.nome)
           ))
+
+          this.cdr.detectChanges()
   
           console.table(this.listaAtletas())
         },
