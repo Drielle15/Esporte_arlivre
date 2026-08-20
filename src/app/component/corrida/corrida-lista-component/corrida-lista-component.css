@@ -1,0 +1,93 @@
+#div-lista {
+    width: 1000px;
+    min-height: 600px;
+    margin: 20px auto;
+    padding: 25px;
+    color: var(--cor02);
+    border: 3px solid var(--cor01);
+}
+
+
+#div-lista h2 {
+    text-align: center;
+    color: #8b0d2f;
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+#lista-corrida {
+    width: 100%;
+}
+
+/* Tabela */
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 12px;
+}
+
+/* Cabeçalho */
+thead {
+    background-color: #8b0d2f;
+    color: white;
+}
+
+th {
+    padding: 14px;
+    font-size: 16px;
+    text-align: left;
+}
+
+/* Linhas */
+tbody tr {
+    background-color: #f5e5e8;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.08);
+}
+
+/* Primeira célula com a borda vinho */
+tbody td:first-child {
+    border-left: 5px solid #8b0d2f;
+    border-radius: 10px 0 0 10px;
+}
+
+/* Última célula */
+tbody td:last-child {
+    border-radius: 0 10px 10px 0;
+}
+
+/* Células */
+td {
+    padding: 18px 15px;
+    color: #222;
+    font-size: 16px;
+}
+
+/* Distâncias */
+td:nth-child(3) {
+    color: #8b0d2f;
+    font-weight: bold;
+}
+
+/* Área do botão */
+.acoes {
+    text-align: center;
+}
+
+/* Botão */
+.acoes button {
+    background-color: #8b0d2f;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Quando passar o mouse */
+.acoes button:hover {
+    background-color: #a92d43;
+    transform: scale(1.05);
+}
